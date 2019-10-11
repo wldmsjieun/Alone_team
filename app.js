@@ -3,15 +3,27 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
+// html
+if (app.get('env') === 'development') {
+  app.locals.pretty = true;
+}
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+//connect mongoDB
+mongoose.Promise = global.Promise; // ES6 Native Promise를 mongoose에서 사용한다.
+const connStr = 'mongodb://localhost/alonedb';
+mongoose.connect(connStr, { useNewUrlParser: true,  useUnifiedTopology: true });
+mongoose.connection.on('error', console.error);
 
 app.use(logger('dev'));
 app.use(express.json());
