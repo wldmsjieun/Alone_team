@@ -1,111 +1,101 @@
 extends layout
 
 block content
-  .container
+  .container(style=' width: 1500px; margin-top: 50px')
     .row
       .col-lg-3
-        #loginn
-          | 로그인창입니다.
-        h1.my-4 Buying list
-        .list-group
-          a.list-group-item(href='#') Blank
-          a.list-group-item(href='#') Blank
-          a.list-group-item(href='#') Blank
-          a.list-group-item(href='#') Blank
-          a.list-group-item(href='#') Blank
-          a.list-group-item(href='#') Blank
-          a.list-group-item(href='#') Blank
+        #login(style='margin-top:50px')
+          form
+            .form-group
+              input#id.form-control(type='text' placeholder='아이디')
+            .form-group
+              input#pw.form-control(type='password' placeholder='비밀번호')
+            div
+              button.btn.btn-primary.btn-block &#xB85C;&#xADF8;&#xC778;
+            #but(style='width : 10px flaot = left')
+              button ID/PW&#xCC3E;&#xAE30;
+              button(style='margin-left : 30px') &#xD68C;&#xC6D0;&#xAC00;&#xC785;
+        #category
+          p(align='center' style='font-size:1rem') &#xCE74;&#xD14C;&#xACE0;&#xB9AC;
+          button.btn-ctg &#xC2DD;&#xC790;&#xC7AC;
+          button.btn-ctg &#xC989;&#xC11D;&#xC2DD;&#xD488;
+          button.btn-ctg &#xBC18;&#xCC2C;
+          button.btn-ctg &#xC74C;&#xB8CC;&#xC218;/&#xC544;&#xC774;&#xC2A4;&#xD06C;&#xB9BC;
+          button.btn-ctg &#xCEE4;&#xD53C;/&#xCC28;
+          button.btn-ctg &#xD574;&#xC678;&#xC9C1;&#xAD6C;
+          button.btn-ctg &#xAE30;&#xD0C0;
+      div(style='clear:both;')
       // /.col-lg-3
       // slide bar & banner-
-      .col-lg-9
-        #carouselExampleIndicators.carousel.slide.my-4(data-ride='carousel')
-          ol.carousel-indicators
-            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
-            li(data-target='#carouselExampleIndicators', data-slide-to='1')
-            li(data-target='#carouselExampleIndicators', data-slide-to='2')
-          .carousel-inner(role='listbox')
-            .carousel-item.active
-              img.d-block.img-fluid(src='images/double.jpg', width='900', height='auto', alt='First slide')
-            .carousel-item
-              img.d-block.img-fluid(src='images/double.jpg', width='900', height='auto', alt='Second slide')
-            .carousel-item
-              img.d-block.img-fluid(src='images/double.jpg', width='900', height='auto', alt='Third slide')
-          a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
-            span.carousel-control-prev-icon(aria-hidden='true')
-            span.sr-only Previous
-          a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
-            span.carousel-control-next-icon(aria-hidden='true')
-            span.sr-only Next
-        .row
-          .col-lg-4.col-md-6.mb-4
-            .card.h-100
-              a(href='#')
-                img.card-img-top(src='http://placehold.it/700x400', alt='')
-              .card-body
-                h4.card-title
-                  a(href='#') Item One
-                h5 $24.99
-                p.card-text
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-              .card-footer
-                small.text-muted ★ ★ ★ ★ ☆
-          .col-lg-4.col-md-6.mb-4
-            .card.h-100
-              a(href='#')
-                img.card-img-top(src='http://placehold.it/700x400', alt='')
-              .card-body
-                h4.card-title
-                  a(href='#') Item Two
-                h5 $24.99
-                p.card-text
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.
-              .card-footer
-                small.text-muted ★ ★ ★ ★ ☆
-          .col-lg-4.col-md-6.mb-4
-            .card.h-100
-              a(href='#')
-                img.card-img-top(src='http://placehold.it/700x400', alt='')
-              .card-body
-                h4.card-title
-                  a(href='#') Item Three
-                h5 $24.99
-                p.card-text
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-              .card-footer
-                small.text-muted ★ ★ ★ ★ ☆
-          .col-lg-4.col-md-6.mb-4
-            .card.h-100
-              a(href='#')
-                img.card-img-top(src='http://placehold.it/700x400', alt='')
-              .card-body
-                h4.card-title
-                  a(href='#') Item Four
-                h5 $24.99
-                p.card-text
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-              .card-footer
-                small.text-muted ★ ★ ★ ★ ☆
-          .col-lg-4.col-md-6.mb-4
-            .card.h-100
-              a(href='#')
-                img.card-img-top(src='http://placehold.it/700x400', alt='')
-              .card-body
-                h4.card-title
-                  a(href='#') Item Five
-                h5 $24.99
-                p.card-text
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.
-              .card-footer
-                small.text-muted ★ ★ ★ ★ ☆
-          .col-lg-4.col-md-6.mb-4
-            .card.h-100
-              a(href='#')
-                img.card-img-top(src='http://placehold.it/700x400', alt='')
-              .card-body
-                h4.card-title
-                  a(href='#') Item Six
-                h5 $24.99
-                p.card-text
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
-              .card-footer
-                small.text-muted ★ ★ ★ ★ ☆
+      #cent-menu.col-lg-8
+        .col-lg-8.col-md-6.mb-4(style='float:left')
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='http://placehold.it/700x400' alt='')
+            .card-body
+              h4.card-title
+                a(href='#') Item One
+              h5 $24.99
+              p.card-text Loret. Amet numquam aspernatur!
+        .col-lg-4.col-md-6.mb-4(style='float:left ')
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='http://placehold.it/700x400' alt='')
+            .card-body
+              h4.card-title
+                a(href='#') Item Three
+              h5 $24.99
+              p.card-text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            .card-footer
+              small.text-muted &starf; &starf; &starf; &starf; &star;
+        .clearfix.visible-lg-block
+        .col-lg-4.col-md-6.mb-4(style='float:left ')
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='http://placehold.it/700x400' alt='')
+            .card-body
+              h4.card-title
+                a(href='#') Item Four
+              h5 $24.99
+              p.card-text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            .card-footer
+              small.text-muted &starf; &starf; &starf; &starf; &star;
+        .col-lg-4.col-md-6.mb-4(style='float:left')
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='http://placehold.it/700x400' alt='')
+            .card-body
+              h4.card-title
+                a(href='#') Item Five
+              h5 $24.99
+              p.card-text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            .card-footer
+              small.text-muted &starf; &starf; &starf; &starf; &star;
+        .col-lg-4.col-md-6.mb-4(style='float:left')
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='http://placehold.it/700x400' alt='')
+            .card-body
+              h4.card-title
+                a(href='#') Item Six
+              h5 $24.99
+              p.card-text
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!
+            .card-footer
+              small.text-muted &starf; &starf; &starf; &starf; &star;
+        // /.row
+      .col-lg-1(style='margin-top:50px;')
+        nav.navbar(class='navbar-expand-xl|lg|md|sm')
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='#') &#xAC10;&#xADE4;
+            li.nav-item
+              a.nav-link(href='#') &#xAD11;&#xC5B4;
+            li.nav-item
+              a.nav-link(href='#') &#xB871;&#xD328;&#xB529;
+            li.nav-item
+              a.nav-link(href='#') &#xAE30;&#xB2EC;&#xB824;&#xBD10;
+      
