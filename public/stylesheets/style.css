@@ -41,6 +41,14 @@ a {
 .pagination>ul{
   list-style: none;
 }
+.nav-item  img {
+  width: 130px;
+  height : 130px;
+}
+.nav-item {
+  text-align: center;
+
+}
 .pagination div:nth-child(1)
 {
   float:left;
