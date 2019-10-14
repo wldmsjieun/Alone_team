@@ -7,10 +7,34 @@ a {
   color: #00B7FF;
 }
 
+#category{
+  background-color: #ededed;
+  margin:20px 0px;
+            padding:10px;
+            width:280px;
+            height:400px;
+            float:left;
+            border-radius: .25rem;
+}
+.btn-ctg{
+            background-color:lightgrey;
+            border-bottom-color: lightgrey;
+            margin: .375rem 0rem;
+            padding: .375rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            border:0px solid;
+            border-radius: .25rem;
+            width:260px;
+         }
+
 #loginn {
   margin-top: 50px;
 }
-
+#cate {
+  text-align: center;
+}
 #page{
   margin-left: 500px;
 }
