@@ -41,6 +41,29 @@ a {
 .pagination>ul{
   list-style: none;
 }
+.nav-item  img {
+  width: 130px;
+  height : 130px;
+}
+.nav-item {
+  text-align: center;
+
+}
+#login #but>button {
+
+                     background-color: lightgrey;
+                     border-bottom-color: lightgrey;
+                     margin: .7rem 0rem;
+                     padding: .375rem .75rem;
+                     font-size: 1rem;
+                     line-height: 1.2rem;
+
+                     border:0px;
+                     border-radius: .25rem;
+
+                     width:110px;
+
+ }
 .pagination div:nth-child(1)
 {
   float:left;
