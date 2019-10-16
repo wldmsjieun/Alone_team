@@ -1,29 +1,29 @@
 extends layout
 
 block content
-  .container(style=' width: 1500px; margin-top: 50px')
+  .container(style=' width: 1500px; margin-top: 100px')
     .row
       .col-lg-3
-        #login(style='margin-top:50px')
+        #login(style='margin-top:30px; margin-left:20px')
           form
             .form-group
               input#id.form-control(type='text' placeholder='아이디')
             .form-group
               input#pw.form-control(type='password' placeholder='비밀번호')
             div
-              button.btn.btn-primary.btn-block &#xB85C;&#xADF8;&#xC778;
+              button.btn.btn-primary.btn-block 로그인
             #but(style='width : 10px flaot = left')
-              button ID/PW&#xCC3E;&#xAE30;
-              button(style='margin-left : 30px') &#xD68C;&#xC6D0;&#xAC00;&#xC785;
+              button ID/PW찾기
+              button(style='margin-left : 10px') 회원가입
         #category
-          p(align='center' style='font-size:1rem') &#xCE74;&#xD14C;&#xACE0;&#xB9AC;
-          button.btn-ctg &#xC2DD;&#xC790;&#xC7AC;
-          button.btn-ctg &#xC989;&#xC11D;&#xC2DD;&#xD488;
-          button.btn-ctg &#xBC18;&#xCC2C;
-          button.btn-ctg &#xC74C;&#xB8CC;&#xC218;/&#xC544;&#xC774;&#xC2A4;&#xD06C;&#xB9BC;
-          button.btn-ctg &#xCEE4;&#xD53C;/&#xCC28;
-          button.btn-ctg &#xD574;&#xC678;&#xC9C1;&#xAD6C;
-          button.btn-ctg &#xAE30;&#xD0C0;
+          p(align='center' style='font-size:1rem') 카테고리
+          button.btn-ctg 식자재
+          button.btn-ctg 즉석식품
+          button.btn-ctg 반찬
+          button.btn-ctg 음료수/아이스크림
+          button.btn-ctg 커피/차
+          button.btn-ctg 해외직구
+          button.btn-ctg 기타
       div(style='clear:both;')
       // /.col-lg-3
       // slide bar & banner-
