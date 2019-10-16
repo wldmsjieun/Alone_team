@@ -37,6 +37,9 @@ router.get('/freeboard', errorCatcher(async(req, res, next) => {
 }));
 /* GET Basket page. */
 router.get('/basket', errorCatcher(async(req, res, next) => {
-  res.render('home/basket', { title: '찜' });
+  res.render('home/basket', { title: 'Basket' });
+}));
+router.get('/dips', errorCatcher(async(req, res, next) => {
+  res.render('home/dips', { title: 'Dips' });
 }));
 module.exports = router;
