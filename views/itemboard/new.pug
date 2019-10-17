@@ -1,0 +1,26 @@
+extends ../layout
+block content
+    div
+        p
+        a(href='/itemboard') 뒤로가기
+    form(action='/itemboard/new', method='post')
+        div
+            h3 방개설하기
+        fieldset
+            div
+                label(for="room_maker") 개설자
+                div
+                    input(type="text", name="room_maker")
+            div
+                label(for="date") 개설날짜
+                div
+                    input(type="text", name="date")
+            div
+                label(for="item") 품목 
+                div
+                    textarea(name="item", cols="30", rows="10")
+            div  
+                label(for="title") 방제목
+                    input(type="text", name="title")
+        div
+            button(type='submit') 제출

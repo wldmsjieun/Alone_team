@@ -1,4 +1,4 @@
-실행 법
+실행법
 ==============
 1. git clone을 받는다
 `git clone https://github.com/wldmsjieun/Alone_team.git`
@@ -12,3 +12,6 @@
 
 git upload 시 command line 사용해주세요
 참고자료 : https://nolboo.kim/blog/2013/10/06/github-for-beginner/
+
+========================
+이미지 파일 넣을 떄 되도록이면 영어로 해주세요

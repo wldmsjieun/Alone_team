@@ -33,12 +33,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
-//var loginRouter = require('./routes/login');
+var freeboardRouter = require('./routes/freeboard');
+var basketRouter = require('./routes/basket');
+var userRouter = require('./routes/users');
+var itemBoardRouter = require('./routes/itemboard');//게시판
 
 ////
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-//app.use('/login', loginRouter);//로그인
+app.use('/freeboard',freeboardRouter);
+app.use('/basket',basketRouter);
+app.use('/user', userRouter);//로그인
+app.use('/itemboard', itemBoardRouter);//게시판 
 
 
 // catch 404 and forward to error handler
