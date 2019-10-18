@@ -30,6 +30,14 @@ router.get('/home', errorCatcher(async(req, res, next) => {
 router.get('/login', errorCatcher(async(req, res, next) => {
   res.render('home/login', { title: 'Login' });
  }));
+/* GET Forgot ID/PW page. */
+ router.get('/forgot', errorCatcher(async(req, res, next) => {
+   res.render('home/forgot', { title: 'Forgot' });
+ }));
+ /* GET Register page. */
+ router.get('/regis', errorCatcher(async(req, res, next) => {
+   res.render('home/regis', { title: 'Register' });
+ }));
  /* GET Mypage page. */
  router.get('/mypage', errorCatcher(async(req, res, next) => {
    res.render('home/mypage', { title: 'MyPage' });
