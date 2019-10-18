@@ -1,3 +1,21 @@
+.but>button{
+  float:left
+}
+#cent-menu{
+padding:5px;
+  margin-top :25px;
+  background-color: #ededed;
+  border-radius: .25rem;
+  background-size: 730px;
+}
+#cur_item{
+  padding:10px;
+    margin-top :25px;
+    background-color: #ededed;
+    border-radius: .25rem;
+    background-size: 730px;
+
+  }
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
