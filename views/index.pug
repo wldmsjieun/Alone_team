@@ -12,9 +12,12 @@ block content
               input#pw.form-control(type='password' placeholder='비밀번호')
             div
               button.btn.btn-primary.btn-block 로그인
-            #but(style='width : 10px flaot = left')
-              button ID/PW찾기
-              button(style='margin-left : 10px') 회원가입
+            a(href='./forgot')
+              #but(style='width : 8px' 'float = left')
+                button(type="button") ID/PW찾기
+            a(href='./regis')
+              #but(style='width : 10px' 'float = left' 'margin-left : 5px')
+                button(type="button" style='margin-left : 5px') 회원가입
         #category
           p(align='center' style='font-size:1rem') 카테고리
           button.btn-ctg 식자재
@@ -30,82 +33,78 @@ block content
       #cent-menu.col-lg-8
         .col-lg-8.col-md-6.mb-4(style='float:left')
           //input(type='button' value='write')
-          a(href='/itemboard/new')  wirting 
           .card.h-100
             a(href='#')
-              img.card-img-top(src='http://placehold.it/700x400' alt='')
+              img.card-img-top(src='images/fish.jpg' alt='')
             .card-body
               h4.card-title
-                a(href='#') Item One
-              h5 $24.99
-              p.card-text 
-        .col-lg-4.col-md-6.mb-4(style='float:left ')
-          .card.h-100
-            a(href='#')
-              img.card-img-top(src='http://placehold.it/700x400' alt='')
-            .card-body
-              h4.card-title
-                a(href='#') Item Three
-              h5 $24.99
+                a(href='#') 고등어
+              h5 19.000원
+              | 싱싱해요
               p.card-text
-               
-            .card-footer
-              small.text-muted &starf; &starf; &starf; &starf; &star;
+        .col-lg-4.col-md-6.mb-4(style='float:left' )
+          .card.h-100
+            a(href='#')
+              img.card-img-top(src='images/potato.jpg' height='250px' alt='')
+            .card-body
+              h4.card-title
+                a(href='#') 알감자
+              h5 200.000원
+              | 맛있어요
+
         .clearfix.visible-lg-block
         .col-lg-4.col-md-6.mb-4(style='float:left ')
           .card.h-100
             a(href='#')
-              img.card-img-top(src='http://placehold.it/700x400' alt='')
+              img.card-img-top(src='images/glue.jpg' alt='')
             .card-body
               h4.card-title
-                a(href='#') Item Four
-              h5 $24.99
-              p.card-text
-                
-            .card-footer
-              small.text-muted &starf; &starf; &starf; &starf; &star;
+                a(href='#') AMos Glue
+              h5 4.000원
+              | 접착력이 뛰어나요.
         .col-lg-4.col-md-6.mb-4(style='float:left')
           .card.h-100
             a(href='#')
-              img.card-img-top(src='http://placehold.it/700x400' alt='')
+              img.card-img-top(src='images/pororo.jpg' alt='')
             .card-body
               h4.card-title
-                a(href='#') Item Five
-              h5 $24.99
-              p.card-text
-               
-            .card-footer
-              small.text-muted &starf; &starf; &starf; &starf; &star;
+                a(href='#') 포로로 인형
+              h5 1.200.000원
+              | 아이들이 좋아해요.
         .col-lg-4.col-md-6.mb-4(style='float:left')
           .card.h-100
             a(href='#')
-              img.card-img-top(src='http://placehold.it/700x400' alt='')
+              img.card-img-top(src='images/knife.jpg' alt='')
             .card-body
               h4.card-title
-                a(href='#') Item Six
-              h5 $24.99
-              p.card-text
-               
-            .card-footer
-              small.text-muted &starf; &starf; &starf; &starf; &star;
+                a(href='#') 장미칼
+              h5 42.000원
+              | 흔적도없이 잘라요.
+        .col-lg-6
+          a(href='/itemboard/new')
+            #but(style='width : 10px')
+              button(type="button") 글쓰기
+
         // /.row
+
       .col-lg-1(style='margin-top:50px;')
         nav.navbar(class='navbar-expand-xl|lg|md|sm')
           ul.navbar-nav
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                //- images/none_img.gif'에 사진이 없어서 계속 오류떠서 주석 처리 해놨어요
-                //- img(src='images/none_img.gif')
-                | 감귤
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                //- img(src='images/none_img.gif')
-                | 고등어
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                //- img(src='images/none_img.gif')
-                | 첵스초코
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                //- img(src='images/none_img.gif')
-                | 비타오백
+            #cur_item
+              h5(style='text-align:center') 최근목록
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/potato.jpg')
+                    | 알감자
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/fish.jpg')
+                    | 고등어
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/pororo.jpg')
+                    | 뽀로로 인형
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/knife.jpg')
+                    | 장미칼
