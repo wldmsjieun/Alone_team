@@ -10,6 +10,7 @@ var upload = multer({ dest: 'picture/' }); //img를 올리기 위한 module 정�
 //     res.render("itemboard");
 // }));
 
+//commit 재시도를 위한 주석
 // itemboard 에서 지금까지 받은 목록을 보여주는 부분
 router.get("/", errorCatcher(async(req, res, next) => {
     var items = await Itemboard.find();
