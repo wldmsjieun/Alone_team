@@ -29,8 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
+// .js 를 사용하기 위해 app  에서 require해주는 부분
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var freeboardRouter = require('./routes/freeboard');
@@ -38,14 +37,14 @@ var basketRouter = require('./routes/basket');
 var userRouter = require('./routes/users');
 var itemBoardRouter = require('./routes/itemboard');//게시판
 
-////
+//위와 같이 이게 있어야 실행 가능
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/freeboard',freeboardRouter);
 app.use('/basket',basketRouter);
 app.use('/user', userRouter);//로그인
 app.use('/itemboard', itemBoardRouter);//게시판 
-
+app.use('/picture', express.static('picture'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

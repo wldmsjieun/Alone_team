@@ -7,9 +7,9 @@ block content
                 div
                     p
                     p
-                    a(href='/itemboard') 뒤로가기
+                    a(href='/') 뒤로가기
                     p
-                form(action='/itemboard/new', method='post')
+                form(action='/itemboard/new', method='post',enctype="multipart/form-data")
                     div
                         h3 방개설하기
                     fieldset
@@ -22,7 +22,7 @@ block content
                             div
                                 input(type="text",class="form-control", name="date")
                         div
-                            label(for="deadline") 모집기한
+                            label(for="deadline") 마감일
                             .row
                                 .col-lg-4
                                     select#sel1.form-control
@@ -85,7 +85,7 @@ block content
                         div
                             label(for="category") 카테고리
                             div
-                                select#sel1.form-control
+                                select#sel1.form-control(name="category")
                                         option 카테고리를 선택하세요
                                         option 식자재
                                         option 즉석식품
@@ -103,14 +103,14 @@ block content
                             div
                                 input(type="text",class="form-control", name="title")
                         div  
-                            label(for="title") 사진 올리기
+                            label(for="picture") 사진 올리기
                                 .custom-file
-                                    input#customFile.custom-file-input(type='file')
+                                    input#customFile.custom-file-input(type='file',name="picture")
                                     label.custom-file-label(for='customFile') 사진을 고르세요                         
                         div  
-                            label(for="title") 모집 인원
+                            label(for="members") 모집 인원
                             div
-                                select#sel1.form-control
+                                select#sel1.form-control(name="members")
                                         option 모집할 인원을 선택하세요
                                         option 2
                                         option 3
@@ -127,9 +127,9 @@ block content
                                         option 14
                                         option 15
                         div
-                            label(for="item") 하고싶은 말
+                            label(for="comment") 하고싶은 말
                             div
-                                textarea(name="item",class="form-control", cols="30", rows="10")        
+                                textarea(name="comment",class="form-control", cols="30", rows="10")        
                     div
                         button.btn.btn-primary.btn-block(type="submit" style="margin-top:10px; margin-bottom:10px") 제출
                         
