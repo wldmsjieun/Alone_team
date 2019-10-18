@@ -59,19 +59,23 @@ block content
       .col-lg-1(style='margin-top:50px;')
         nav.navbar(class='navbar-expand-xl|lg|md|sm')
           ul.navbar-nav
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                img(src='images/none_img.gif')
-                | 감귤
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                img(src='images/none_img.gif')
-                | 고등어
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                img(src='images/none_img.gif')
-                | 첵스초코
-            li.nav-item
-              a.nav-link(href='#', style='color:black')
-                img(src='images/none_img.gif')
-                | 비타오백
+            #cur_item
+              h5(style='text-align:center') 최근목록
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/potato.jpg')
+                    | 알감자
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/fish.jpg')
+                    //-이 밑에 주석은 혹시 모르니까 남겨놔 주세요~ 
+                    //-img(src='picture/9437d3e417037c1b221518d08832782f')
+                    | 고등어
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/pororo.jpg')
+                    | 뽀로로 인형
+                li.nav-item
+                  a.nav-link(href='#', style='color:black')
+                    img(src='images/knife.jpg')
+                    | 장미칼

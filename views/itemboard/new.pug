@@ -18,70 +18,9 @@ block content
                             div
                                 input(type="text", class="form-control", name="room_maker")
                         div
-                            label(for="date") 개설날짜
-                            div
-                                input(type="text",class="form-control", name="date")
-                        div
                             label(for="deadline") 마감일
-                            .row
-                                .col-lg-4
-                                    select#sel1.form-control
-                                        option 연도
-                                        option 2019
-                                        option 2020
-                                        option 2021
-                                .col-lg-4
-                                    select#sel1.form-control
-                                        option 월
-                                        option 1
-                                        option 2
-                                        option 3
-                                        option 4
-                                        option 5
-                                        option 6
-                                        option 7
-                                        option 8
-                                        option 9
-                                        option 10
-                                        option 11
-                                        option 12
-                                .col-lg-4
-                                    select#sel1.form-control
-                                        option 일
-                                        option 1
-                                        option 2
-                                        option 3
-                                        option 4
-                                        option 5
-                                        option 6
-                                        option 7
-                                        option 8
-                                        option 9
-                                        option 10
-                                        option 11
-                                        option 12
-                                        option 13
-                                        option 14
-                                        option 15
-                                        option 16
-                                        option 17
-                                        option 18
-                                        option 19
-                                        option 20
-                                        option 21
-                                        option 22
-                                        option 23
-                                        option 24
-                                        option 25
-                                        option 26
-                                        option 27
-                                        option 28
-                                        option 29
-                                        option 30
-                                        option 31
-                                    
-                                
-
+                            div
+                                input(type='date' class="form-control" name='deadline' min='2019-01-01')
                         div
                             label(for="category") 카테고리
                             div
@@ -103,14 +42,13 @@ block content
                             div
                                 input(type="text",class="form-control", name="title")
                         div  
-                            label(for="picture") 사진 올리기
-                                .custom-file
-                                    input#customFile.custom-file-input(type='file',name="picture")
-                                    label.custom-file-label(for='customFile') 사진을 고르세요                         
+                            label(for="picture" name="picture") 사진 올리기
+                                input.form-control-file.border(type='file' name='file')
+                        
                         div  
                             label(for="members") 모집 인원
                             div
-                                select#sel1.form-control(name="members")
+                                select#sel1.form-control(name="numOfMembers")
                                         option 모집할 인원을 선택하세요
                                         option 2
                                         option 3
