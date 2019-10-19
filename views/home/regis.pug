@@ -8,66 +8,64 @@ block content
         legend
           center
             h2
-              b Registration Form
+              b 회원가입
         br
         // Text input
         .form-group
-          label.col-md-4.control-label &#xC774;&#xB984;
+          label.col-md-4.control-label 이름
           .col-md-4.inputGroupContainer
             .input-group
               span.input-group-addon
                 i.glyphicon.glyphicon-user
-              input.form-control(name='first_name' placeholder='First Name' type='text')
-        .form-group
-          label.col-md-4.control-label &#xC9C1;&#xC7A5;
-          .col-md-4.selectContainer
-            .input-group
-              span.input-group-addon
-                i.glyphicon.glyphicon-list
-              select.form-control.selectpicker(name='department')
-                option(value='') &#xD68C;&#xC0AC;
-                option &#xAC1C;&#xC778;
-                option &#xD559;&#xC0DD;
+              input.form-control(name='name' placeholder='이름' type='text')
+
         // Text input
         .form-group
-          label.col-md-4.control-label &#xC544;&#xC774;&#xB514;
+          label.col-md-4.control-label 아이디
           .col-md-4.inputGroupContainer
             .input-group
               span.input-group-addon
                 i.glyphicon.glyphicon-user
-              input.form-control(name='user_name' placeholder='Username' type='text')
+              input.form-control(name='id' placeholder='ID' type='text')
         // Text input
         .form-group
-          label.col-md-4.control-label &#xBE44;&#xBC00;&#xBC88;&#xD638;
+          label.col-md-4.control-label 비밀번호
           .col-md-4.inputGroupContainer
             .input-group
               span.input-group-addon
                 i.glyphicon.glyphicon-user
-              input.form-control(name='user_password' placeholder='Password' type='password')
+              input.form-control(name='user_password' placeholder='비밀번호' type='password')
         // Text input
         .form-group
-          label.col-md-4.control-label &#xBE44;&#xBC00;&#xBC88;&#xD638; &#xD655;&#xC778;
+          label.col-md-4.control-label 비밀번호 확인
           .col-md-4.inputGroupContainer
             .input-group
               span.input-group-addon
                 i.glyphicon.glyphicon-user
-              input.form-control(name='confirm_password' placeholder='Confirm Password' type='password')
+              input.form-control(name='confirm_password' placeholder='비밀번호 확인' type='password')
         // Text input
         .form-group
-          label.col-md-4.control-label &#xC774;&#xBA54;&#xC77C;
+          label.col-md-4.control-label 이메일
           .col-md-4.inputGroupContainer
             .input-group
               span.input-group-addon
                 i.glyphicon.glyphicon-envelope
-              input.form-control(name='email' placeholder='E-Mail Address' type='text')
+              input.form-control(name='email' placeholder='이메일 주소' type='text')
         // Text input
         .form-group
-          label.col-md-4.control-label &#xC804;&#xD654;&#xBC88;&#xD638;
+          label.col-md-4.control-label 전화번호
           .col-md-4.inputGroupContainer
             .input-group
               span.input-group-addon
                 i.glyphicon.glyphicon-earphone
-              input.form-control(name='contact_no' placeholder='(639)' type='text')
+              input.form-control(name='contact_no' placeholder='전화번호' type='text')
+        .form-group
+          label.col-md-4.control-label 주소
+          .col-md-4.inputGroupContainer
+            .input-group
+              span.input-group-addon
+                i.glyphicon.glyphicon-home
+              input.form-control(name='adress' placeholder='주소' type='text')
         // Select Basic
         // Success message
         #success_message.alert.alert-success(role='alert')
@@ -80,4 +78,4 @@ block content
           .col-md-4
             br
             | 위 내용으로 회원가입 하시겠습니까?
-            .button.btn.btn-primary(type='submit') SUBMIT
+            .button.btn.btn-primary(type='submit') 가입하기

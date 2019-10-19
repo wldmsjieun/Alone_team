@@ -11,7 +11,7 @@ block content
                 .text-center
                   h3
                     i.fa.fa-lock.fa-4x
-                  h2.text-center 아이디나 비밀번호를 까먹었습니까?
+                  h2.text-center ID / PW 찾기
                   p 이메일 주소로 정보를 보내드립니다.
                   .panel-body
                     form.form
@@ -22,4 +22,4 @@ block content
                               i.glyphicon.glyphicon-envelope.color-blue
                             input#emailInput.form-control(placeholder='이메일 주소를 입력해주세요.', type='email', oninvalid="setCustomValidity('Please enter a valid email address!')", onchange="try{setCustomValidity('')}catch(e){}", required='')
                         .form-group
-                          input.btn.btn-lg.btn-primary.btn-block(value='전송하기', type='submit')
+                          input.btn.btn-lg.btn-primary.btn-block(value='전송', type='submit')
