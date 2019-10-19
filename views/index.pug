@@ -12,12 +12,9 @@ block content
               input#pw.form-control(type='password' placeholder='비밀번호')
             div
               button.btn.btn-primary.btn-block 로그인
-            a(href='./forgot')
-              #but(style='width : 8px' 'float = left')
-                button(type="button") ID/PW찾기
-            a(href='./regis')
-              #but(style='width : 10px; float = left; margin-left : 5px')
-                button(type="button" style='margin-left : 5px') 회원가입
+            #but(style='width : 10px flaot = left')
+              button(type="button" onclick="location.href='./forgot'") ID/PW찾기
+              button(type="button" style='margin-left : 10px' onclick="location.href='./regis'") 회원가입
         #category
           p(align='center' style='font-size:1rem') 카테고리
           button.btn-ctg 식자재
@@ -80,10 +77,8 @@ block content
                 a(href='#') 장미칼
               h5 42.000원
               | 흔적도없이 잘라요.
-        .col-lg-6
-          a(href='/itemboard/new')
-            #but(style='width : 10px')
-              button(type="button") 글쓰기
+        
+        button.btn.btn-warning(type='button' style='float:right; width:5rem; margin-right:1rem; margin-bottom:3rem' onclick="location.href='./itemboard/new'") 방 개설
 
         // /.row
 
