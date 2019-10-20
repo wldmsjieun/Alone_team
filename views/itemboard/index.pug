@@ -1,7 +1,82 @@
-//- 이거 대충 해본거에요
-each i in items
-    p
-    .title=i.title
-    .room_maker=i.room_maker
-    .date=i.date
-     img(src=i.picture_url)
+extends ../layout
+block content
+  .container(style=' width: 1500px; margin-top: 100px')
+    .row
+        .col-lg-3
+            #login(style='margin-top:30px; margin-left:20px')
+                form
+                    .form-group
+                        input#id.form-control(type='text' placeholder='아이디')
+                    .form-group
+                        input#pw.form-control(type='password' placeholder='비밀번호')
+                    div
+                        button.btn.btn-primary.btn-block 로그인
+                    #but(style='width : 10px flaot = left')
+                        button(type="button" onclick="location.href='./forgot'") ID/PW찾기
+                        button(type="button" style='margin-left : 10px' onclick="location.href='./regis'") 회원가입
+            #category
+                p(align='center' style='font-size:1rem') 카테고리
+                button.btn-ctg 식자재
+                button.btn-ctg 즉석식품
+                button.btn-ctg 반찬
+                button.btn-ctg 음료수/아이스크림
+                button.btn-ctg 커피/차
+                button.btn-ctg 해외직구
+                button.btn-ctg 기타
+
+        .col-lg-8(style="padding:3rem")
+            .row
+                .col-lg-5
+                    img(width="250px" class="img-fluid" src='../images/potato.jpg' alt='사진')
+                    div(align='center' style="margin-top:1rem")
+                        h5 개설자가 전해주는 말
+                        p 알감자 21개 같이사요~
+                .col-lg-7
+                    table.table.table-hover
+                        thead
+                            tr
+                                th(colspan='3') 알감자가 맛있어요
+                        tbody
+                            tr
+                                td 카테고리
+                                td 식자재
+                            tr
+                                td 개설자
+                                td mju12321
+                            tr
+                                td 개설일자
+                                td 2019.10.18
+                            tr
+                                td 마감일자
+                                td 2019.10.20
+                            tr
+                                td 인원
+                                td 2/3
+            button.btn.btn-warning(type='button' style='float:right; margin-left: 1.5rem; margin-right:1rem; width:7rem') 찜
+            button.btn.btn-primary(type='button' style='float:right;width:7rem') 참가하기
+            button.btn.btn-secondary(type='button' style='float:left; width:7rem') 수정
+            
+
+        .col-lg-1(style='margin-top:50px;')
+            nav.navbar(class='navbar-expand-xl|lg|md|sm')
+            ul.navbar-nav
+                #cur_item
+                h5(style='text-align:center') 최근목록
+                    li.nav-item
+                    a.nav-link(href='#', style='color:black')
+                        img(src='images/potato.jpg')
+                        | 알감자
+                    li.nav-item
+                    a.nav-link(href='#', style='color:black')
+                        img(src='images/fish.jpg')
+                        //-이 밑에 주석은 혹시 모르니까 남겨놔 주세요~ 
+                        //-img(src='picture/9437d3e417037c1b221518d08832782f')
+                        | 고등어
+                    li.nav-item
+                    a.nav-link(href='#', style='color:black')
+                        img(src='images/pororo.jpg')
+                        | 뽀로로 인형
+                    li.nav-item
+                    a.nav-link(href='#', style='color:black')
+                        img(src='images/knife.jpg')
+                        | 장미칼
