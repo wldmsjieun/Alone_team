@@ -18,6 +18,9 @@ router.get("/", errorCatcher(async(req, res, next) => {
     res.render("itemboard/index",{items : items});
 }));
 
+router.get("/index",function(req,res){
+    res.render("itemboard/index", { title: '물건이네' });
+});
 
 // New
 router.get("/new",function(req,res){
