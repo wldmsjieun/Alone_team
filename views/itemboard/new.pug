@@ -7,7 +7,8 @@ block content
                 div
                     p
                     p
-                    a(href='/') 뒤로가기
+                    //- 웹 페이지 자체에 뒤로가기가 있는 데 중복은 필요없을 것같아서 뺄게요 
+                    //- a(href='/') 뒤로가기
                     p
                 form(action='/itemboard/new', method='post',enctype="multipart/form-data")
                     div
@@ -43,7 +44,7 @@ block content
                                 input(type="text",class="form-control", name="title")
                         div  
                             label(for="picture" name="picture") 사진 올리기
-                                input.form-control-file.border(type='file' name='picture')
+                                input.form-control-file.border(type='file' name='picture' required)
                         
                         div  
                             label(for="members") 모집 인원

@@ -26,12 +26,19 @@ router.get("/new",function(req,res){
 
 // /new부분에서 받은 정보들을 올려주고 Database에 올려주는 부분
 router.post("/new", upload.single('picture'),errorCatcher(async(req,res,next) => {
+    // try {
+    //     console.log(req.file);
+    //     // res.json(req.body);
+    // } catch (e) {
+    //     res.redirect("/itemboard");
+    // }
     var new_post = new Itemboard({
         room_maker : req.body.room_maker, 
         date : req.body.date, 
         deadline : req.body.deadline, 
         category : req.body.category, 
         item : req.body.item, 
+        members : req.body.members, 
         title : req.body.title,
         comment : req.body.comment,
         picture_url : "picture/"+req.file.filename

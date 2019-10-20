@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var mongoose = require('mongoose');
 
+// var Itemboard=require("../models/itemboard");
+// var multer = require('multer');
 
 var app = express();
 
@@ -34,7 +36,6 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var freeboardRouter = require('./routes/freeboard');
 var basketRouter = require('./routes/basket');
-var userRouter = require('./routes/users');
 var itemBoardRouter = require('./routes/itemboard');//게시판
 
 //위와 같이 이게 있어야 실행 가능
@@ -42,7 +43,6 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/freeboard',freeboardRouter);
 app.use('/basket',basketRouter);
-app.use('/user', userRouter);//로그인
 app.use('/itemboard', itemBoardRouter);//게시판 
 app.use('/picture', express.static('picture'));
 
